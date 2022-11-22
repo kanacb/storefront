@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 django = "*"
+faker-commerce = "*"
 
 [dev-packages]
 

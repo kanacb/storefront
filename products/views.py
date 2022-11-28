@@ -22,7 +22,7 @@ class ProdustListView(
         else:
             query = Product.objects.all()
             read_seralizer = ProductSerializer(query, many=True)
-        return Response(read_seralizer.data)
+        return Response({ "product" : read_seralizer.data})
 
 def post(self, request):
     create_serializer = ProductSerializer(data=request.data)
